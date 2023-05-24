@@ -108,7 +108,7 @@ class Link(models.Model):
 
 class Blog(models.Model):
     name = models.CharField(max_length=200)
-    video_link = models.CharField(max_length=200)
+    video_link = models.CharField(max_length=200, null=True, blank=True)
     image = models.ImageField(max_length=200)
     description = models.TextField()
     kurishlar = models.IntegerField(default=0)
